@@ -44,8 +44,8 @@ loader1.load('./8.glb', function(glb){
 
  
 const root1 = glb.scene;
-root1.scale.set(2, 2, 2);
-root1.position.y= -3;
+root1.scale.set(3, 3, 3);
+root1.position.y= -12;
 root1.position.z= 2;
 root1.name = "root1";
 root1.alpha = true,
@@ -115,7 +115,7 @@ const planeGeometry = new THREE.PlaneGeometry( 1000, 1000 );
 const planeMaterial = new THREE.MeshStandardMaterial( { color: 0x808080 } )
 const plane = new THREE.Mesh( planeGeometry, planeMaterial );
 plane.receiveShadow = true;
-plane.position.y = -4;
+plane.position.y = -10;
 plane.rotateX( - Math.PI / 2);
 scene.add( plane );
 ///grid
@@ -131,7 +131,7 @@ const sizes = {
 
 //camera
 const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height, 0.1, 1000)
-camera.position.set(12,18,12)
+camera.position.set(38,2,30)
 camera.lookAt(scene.position)
 scene.add(camera)
 
